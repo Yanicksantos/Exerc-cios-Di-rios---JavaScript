@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Multiplos de 3 e 4</title>
 </head>
 <body>
 
+    <!--Questão 1-->
     <div class="q1">
+        <div id="alert">
+            <p> existe campo vazio </p>
+            <p class="material-symbols-outlined">warning</p>
+        </div>
+
+        <h1>Questão 1 - Multiplos de 2 e 3</h1>
         <form>
             <label for="">Valor Máximo</label>
-            <input type="text" placeholder="Entre com Valor máximo" autofocus required>
+            <input type="number" placeholder="Entre com Valor máximo" autofocus id="max" required>
+            
+            
             <label for="">Valor Mínimo</label>
-            <input type="text" placeholder="Entre com Valor mínimo" required>
-            <input type="button" value="Confirmar">
+            <input type="number" placeholder="Entre com Valor mínimo" id="min" required>
+            <p id="valormin"></p>
+            <input type="button" value="Confirmar" onclick="Multiplos()">
         </form>
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p id="resultadoFinal"></p>
+        </div>
     </div>
     
+    
     <script src="script.js"></script>
+
 </body>
 </html>

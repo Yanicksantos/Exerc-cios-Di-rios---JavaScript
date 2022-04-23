@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +37,12 @@
             letter-spacing: 0.5px;
             background: linear-gradient(to right, #4776e6, #8e54e9);
         }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
 
         #valor{
             margin: 10px 0 5px 0;
@@ -66,7 +72,7 @@
 <body>
     <main>
         <h1>Tabuada</h1>
-    <form action="">
+    <form>
         <label for="">Entre com qualquer número</label>
         <input type="number" placeholder="Valor de X" autofocus id="valor" required >
         <input type="button" onclick="Tabuada()" value="Mostrar Tabuada" class="input">
