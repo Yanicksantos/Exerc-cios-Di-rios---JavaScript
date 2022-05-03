@@ -79,18 +79,6 @@
         <input type="submit" value="Resetar" class="input">
     </form>
     <div>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
-       <p class="resultado"></p>
     </div>
 
     </main>
@@ -102,18 +90,29 @@
     <script>
         let valor =document.getElementById("valor");
 
-        let resultado = document.querySelectorAll(".resultado")
+        let $div = document.querySelector("div")
+        let $par = document.querySelectorAll('p')
+        console.log($par)
 
         function Tabuada(){
+            if($par.length >= 0){
+
+                $par.parentNode.removeChild($par)
+            }
+            
+            
+
             if(valor.value){
-                for(let i=1; i<= resultado.length; i++){
-                    resultado[i-1].innerHTML= `${valor.value} x ${i} = ${valor.value * i}`
+                for(let i=1; i<= 12; i++){
+                    const $paragrafo = document.createElement("p")
+                    $paragrafo.textContent = `${valor.value} x ${i} = ${valor.value * i}`
+                    $div.appendChild($paragrafo)
                 }
             }
             else{
                 alert("Digite um numero pfv")
             }
-        }
+        }[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[bbbbbbbbbbbbbbbbbbbb[hgc]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
     </script>
 </body>
 </html>
