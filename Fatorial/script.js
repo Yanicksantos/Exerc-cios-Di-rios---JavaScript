@@ -20,7 +20,7 @@ $button.addEventListener("click", () => {
         document.querySelector("p").textContent =`${$input.value}! = ${result} (${time} milisegundos)`
     }
     else{
-        document.querySelector("p").textContent ="...Esperando um numero"
+        document.querySelector("p").textContent ="...Esperando um numero!!!"
     }
    
 })

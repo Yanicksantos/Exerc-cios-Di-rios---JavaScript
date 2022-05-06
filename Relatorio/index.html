@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,
+        td,
+        th, 
+        caption{
+            border: .5px solid black;
+        }
+        caption{
+            height: 35px;
+            line-height: 35px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <table style="width: 700px; margin: auto; text-align: center; border-collapse: collapse;">
+        <caption>Boletim de Notas</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Notas</th>
+                <th>Situação</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr style="background-color: bisque;">
+                <td>Aluno nr xx</td>
+                <td>Nota yy</td>
+                <td>[(A/RE)PROVADO]</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" style="color: green;">APROVADOS: XX (xx%)</td>
+                <td style="color: red;"> REPROVADOS: YY (yy%)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
